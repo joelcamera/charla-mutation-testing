@@ -45,7 +45,7 @@ public class Stack {
         if (isEmpty()) {
             throw new IllegalStateException();
         }
-        Object rv = this.top();
+        Object rv = this.elems[readIndex];
         readIndex--;
         return rv;
     }
@@ -61,8 +61,7 @@ public class Stack {
     @Override
     public int hashCode() {
         final int prime = 31;
-        int result = 1;
-        result = prime * result + Arrays.hashCode(elems);
+        int result = prime + Arrays.hashCode(elems);
         result = prime * result + readIndex;
         return result;
     }

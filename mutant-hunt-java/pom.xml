@@ -55,13 +55,17 @@
                 <version>1.17.0</version>
                 <configuration>
                     <targetClasses>
-                        <param>org.TenPines.model.*</param>
+                        <param>org.mutant_hunt.model.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>org.TenPines.model.*</param>
+                        <param>org.mutant_hunt.model.*</param>
                     </targetTests>
                     <mutators>
+                        <!-- Para ver que tiene cada uno de estos grupos -->
+                        <!-- https://pitest.org/quickstart/mutators/ -->
+
                         <mutator>DEFAULTS</mutator>
+
 <!--                        <mutator>STRONGER</mutator>-->
 
                         <!--No es recomendado utilizar-->
