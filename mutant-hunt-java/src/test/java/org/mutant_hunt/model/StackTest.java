@@ -139,10 +139,16 @@ class StackTest {
 
     @Test
     void devuelveElHashDelStack() {
-        var prime = 31;
-        var result = 1;
-        result = prime + Arrays.hashCode(new Object[10]);
-        result = prime * result + -1;
-        assertEquals(result, new Stack().hashCode());
+        var expectedHash = 31 * (31 + Arrays.hashCode(new Object[5])) - 1;
+        assertEquals(expectedHash, new Stack(5).hashCode());
+    }
+
+    @Test
+    void laCapacidadDefaultEsDiez() {
+        var stack = new Stack();
+        for (int i = 0; i < 10; i++) {
+            stack.push(i);
+        }
+        assertTrue(stack.isFull());
     }
 }

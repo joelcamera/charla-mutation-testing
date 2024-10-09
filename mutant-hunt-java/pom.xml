@@ -64,12 +64,12 @@
                         <!-- Para ver que tiene cada uno de estos grupos -->
                         <!-- https://pitest.org/quickstart/mutators/ -->
 
-                        <mutator>DEFAULTS</mutator>
+<!--                        <mutator>DEFAULTS</mutator>-->
 
 <!--                        <mutator>STRONGER</mutator>-->
 
                         <!--No es recomendado utilizar-->
-<!--                        <mutator>ALL</mutator>-->
+                        <mutator>ALL</mutator>
                     </mutators>
                 </configuration>
             </plugin>
